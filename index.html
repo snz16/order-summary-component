@@ -10,28 +10,76 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+    body, html{
+      height: 100%;
+      margin: 0;
+    }
+
+    .main {
+      background-image: url("file:///C:/Users/seren/Downloads/order-summary-component-main/order-summary-component-main/images/pattern-background-desktop.svg");
+      height: 100%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+    width: 500px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 100;
+    font-family: 'Red Hot Display', sans-serif;
+    } 
+
+    .img2{
+      width: 550px;
+      height: 300px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .item {
+    width: 300px;
+    background-color: lightgray;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<div class="main">
+  <!-- <img class="img1" src="./images/pattern-background-desktop.svg" alt="" /> -->
+  <div class="container">
+    <body>
+    <img class="img2" src="./images/illustration-hero.svg" alt="" />
+    <h1>Order Summary</h1>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+      You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="item">
+        <p>Annual Plan</p>
+        <p>59.99/year</p>
+      </div>
+  
+      <a href="">Change</a>
+  
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </body>
+  
+    <button>Proceed to Payment</button>
+    <a href="">Cancel Order</a>
   </div>
-</body>
+</div>
+
+
 </html>
