@@ -11,42 +11,50 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
 
-    body, html{
+    body{
       height: 100%;
-      margin: 0;
+      margin: auto;
     }
 
     .main {
       background-image: url("file:///C:/Users/seren/Downloads/order-summary-component-main/order-summary-component-main/images/pattern-background-desktop.svg");
-      height: 100%;
-
-      background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; /* Covers the whole page */
     }
 
-    .container {
-    width: 500px;
-    background-color: lightskyblue;
-    border-radius: 10px;
+    .box {
+    width: 400px;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 25px;
     color: hsl(223, 47%, 23%);
-    font-weight: 100;
+    font-weight: 500;
     font-family: 'Red Hot Display', sans-serif;
+    text-align: center;
     } 
-
+  
     .img2{
-      width: 550px;
-      height: 300px;
-      border-radius: 10px;
-      margin: 10px;
+      width: 100%;
+      height: 50%;
+      margin: auto;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
     }
 
-    .item {
+    .box2 {
     width: 300px;
+    height: 50px;
     background-color: lightgray;
     padding: 50px;
-    margin: 20px;
-    border-radius: 10px;
+    margin: auto;
+    border-radius: 25px;
+    text-align: left;
+    color: hsl(223, 47%, 23%);
+    font-weight: 500;
+    }
+
+    .item2 {
+      text-align: right;
     }
 
     .attribution { font-size: 11px; text-align: center; }
@@ -54,21 +62,26 @@
   </style>
 </head>
 <div class="main">
-  <!-- <img class="img1" src="./images/pattern-background-desktop.svg" alt="" /> -->
-  <div class="container">
+  <div class="box">
     <body>
     <img class="img2" src="./images/illustration-hero.svg" alt="" />
     <h1>Order Summary</h1>
 
-      You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!
+      <p> You can now listen to millions of songs, 
+        <br> audiobooks, and podcasts on any device 
+        <br> anywhere you like!
+      </p>
   
-      <div class="item">
+      <div class="box2">
         <p>Annual Plan</p>
         <p>59.99/year</p>
+
+        <div class="item2">
+          <a href="">Change</a>
+        </div>
       </div>
   
-      <a href="">Change</a>
+      
   
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
