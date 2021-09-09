@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-music.svg">
   
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
     body{
       height: 100%;
       margin: auto;
+      font-family: 'Red Hat Display', sans-serif;
+      text-align: center;
     }
 
     .main {
@@ -23,15 +26,30 @@
     }
 
     .box {
-    width: 400px;
-    background-color: whitesmoke;
+    width: 500px;
+    background-color: white;
     margin: auto;
     border-radius: 25px;
-    color: hsl(223, 47%, 23%);
-    font-weight: 500;
-    font-family: 'Red Hot Display', sans-serif;
-    text-align: center;
     } 
+
+    .header {
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(223, 47%, 23%);
+      font-weight: 900;
+    }
+
+    .icon-music{
+      width: 100%;
+      margin: auto;
+    }
+
+    .p1{
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(224, 23%, 55%);
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
   
     .img2{
       width: 100%;
@@ -42,55 +60,78 @@
     }
 
     .box2 {
-    width: 300px;
-    height: 50px;
-    background-color: lightgray;
-    padding: 50px;
+    width: 400px;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
     margin: auto;
-    border-radius: 25px;
-    text-align: left;
-    color: hsl(223, 47%, 23%);
-    font-weight: 500;
+    border-radius: 15px;
+    
     }
 
-    .item2 {
+    .p2{
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);  
+      padding-right: 20%;
+      padding-top: 5%;
+    }
+
+   .p3{
+      font-weight: 700;
+      color: hsl(223, 47%, 23%);  
+      text-align: center;
+      padding-right: 20%;
+
+    }
+
+    .button1 {
+      color: hsl(224, 23%, 55%);
       text-align: right;
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .box3 {
+      width: 100%;
+      /* height: 100px; */
+      border-radius: 15px;
+      color: hsl(245, 75%, 52%);
+
+    }
+
+    .button2{
+      font-weight: 700;
+    }
+
+    .button3 {
+      font-weight: 600;
+    }
   </style>
 </head>
 <div class="main">
   <div class="box">
     <body>
     <img class="img2" src="./images/illustration-hero.svg" alt="" />
-    <h1>Order Summary</h1>
+    <h1 class="header">Order Summary</h1>
 
-      <p> You can now listen to millions of songs, 
+        <img class="icon-music" src=".images/icon-music.svg"/>
+
+      <p class="p1"> You can now listen to millions of songs, 
         <br> audiobooks, and podcasts on any device 
         <br> anywhere you like!
       </p>
   
       <div class="box2">
-        <p>Annual Plan</p>
-        <p>59.99/year</p>
+        <p class="p2">Annual Plan</p>
+        <p class="p3">59.99/year</p>
+        <a class ="button1" href="">Change</a>
+      </div>
 
-        <div class="item2">
-          <a href="">Change</a>
-        </div>
+      <div class="box3">
+        <button class="button2" href="" >Proceed to Payment</button>
       </div>
-  
+
+      <a class="button3" href="">Cancel Order</a>
       
-  
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
     </body>
-  
-    <button>Proceed to Payment</button>
-    <a href="">Cancel Order</a>
+    
   </div>
 </div>
 
