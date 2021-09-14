@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-music.svg">
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+  <!-- <title>Frontend Mentor | Order summary card</title> -->
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,26 +15,24 @@
 
     body{
       height: 100%;
-      margin: auto;
-      font-family: 'Red Hat Display', sans-serif;
+      font-family: "Red Hat Display", sans-serif;
       text-align: center;
-    }
-
-    .main {
+      background-color: rgb(232,236,252);
       background-image: url("file:///C:/Users/seren/Downloads/order-summary-component-main/order-summary-component-main/images/pattern-background-desktop.svg");
       background-repeat: no-repeat;
-      background-size: cover; /* Covers the whole page */
+      background-size: cover; 
     }
 
     .box {
     width: 500px;
     background-color: white;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 25px;
     } 
 
     .header {
-      font-family: 'Red Hat Display', sans-serif;
+      font-family: "Red Hat Display-Bold", sans-serif;
       color: hsl(223, 47%, 23%);
       font-weight: 900;
     }
@@ -44,8 +43,8 @@
     }
 
     .p1{
-      font-family: 'Red Hat Display', sans-serif;
-      color: hsl(224, 23%, 55%);
+      font-family: "Red Hat Display", sans-serif;
+      color: hsl(223, 13%, 31%);
       font-size: 18px;
       font-weight: 500;
     }
@@ -65,11 +64,13 @@
     background-color: hsl(225, 100%, 98%);
     margin: auto;
     border-radius: 15px;
-    
+    align-items: center;
     }
 
     .p2{
+      font-family: "Red Hat Display-Bold", sans-serif;
       font-weight: 900;
+      font-size: 18px;
       color: hsl(223, 47%, 23%);  
       padding-right: 20%;
       padding-top: 5%;
@@ -77,32 +78,63 @@
 
    .p3{
       font-weight: 700;
-      color: hsl(223, 47%, 23%);  
+      color: hsl(224, 23%, 55%);  
       text-align: center;
-      padding-right: 20%;
+      padding-left: 20%;
 
     }
 
     .button1 {
-      color: hsl(224, 23%, 55%);
-      text-align: right;
+      color: hsl(245, 75%, 52%);
+      font-family: "Red Hat Display-Bold", sans-serif;
+      font-weight: 700;
+      padding-left: 80px;
+      /* display: inline-block; */
     }
 
     .box3 {
       width: 100%;
-      /* height: 100px; */
       border-radius: 15px;
-      color: hsl(245, 75%, 52%);
+      padding: 50px;
 
     }
 
     .button2{
       font-weight: 700;
+      border: none;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      padding: 20px 125px;
+      text-align: center;
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 15px;
+      transition-duration: 0.3s;
+      cursor: pointer;
+    }
+
+    .button2:hover {
+      background-color: white;
+      color: hsl(245, 75%, 52%);
+      border: 2px solid hsl(245, 75%, 52%);
     }
 
     .button3 {
       font-weight: 600;
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+      align-items: center; 
+      transition-duration: 0.3s ;
+      cursor: pointer;
     }
+
+    .button3:hover{
+      color: red;
+    }
+
   </style>
 </head>
 <div class="main">
@@ -111,7 +143,7 @@
     <img class="img2" src="./images/illustration-hero.svg" alt="" />
     <h1 class="header">Order Summary</h1>
 
-        <img class="icon-music" src=".images/icon-music.svg"/>
+        <!-- <img class="icon-music" src=".images/icon-music.svg"/> -->
 
       <p class="p1"> You can now listen to millions of songs, 
         <br> audiobooks, and podcasts on any device 
@@ -119,9 +151,10 @@
       </p>
   
       <div class="box2">
-        <p class="p2">Annual Plan</p>
-        <p class="p3">59.99/year</p>
-        <a class ="button1" href="">Change</a>
+        <p class="p2">Annual Plan <p class="p3">$59.99/year <a class="button1" href="">Change</a></p></p>
+        
+        
+        
       </div>
 
       <div class="box3">
