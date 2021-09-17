@@ -57,6 +57,9 @@
     }
 
     .icon-music{
+      pointer-events: none;
+      opacity: 0;
+      overflow: hidden; 
       position: relative;
       top: 45px;
       right: 145px;
