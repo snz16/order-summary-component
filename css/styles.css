@@ -36,6 +36,10 @@
       color: hsl(223, 13%, 31%);
       font-size: 18px;
       font-weight: 500;
+      width: 80%;
+      position: relative;
+      left: 50px;
+      bottom: 10px;
     }
   
   
@@ -56,13 +60,12 @@
     left: 50px;
     }
 
-    .icon-music{
-      pointer-events: none;
-      opacity: 0;
-      overflow: hidden; 
+    .img3{
+    width: 45px;
+    height: 45px;
       position: relative;
-      top: 45px;
-      right: 145px;
+      top: 25px;
+      right: 150px;
     }
 
     .p2{
@@ -72,7 +75,7 @@
       color: hsl(223, 47%, 23%);  
       position: relative;
       right: 45px;
-      bottom: 15px;
+      bottom: 45px;
     }
 
    .p3{
@@ -82,7 +85,7 @@
       text-align: center;
       position: relative;
       right: 45px;
-      bottom: 25px;
+      bottom: 60px;
     }
 
     .button1 {
@@ -92,7 +95,7 @@
       transition-duration: 0.3s;
       position: relative;
       left: 150px;
-      bottom: 80px;
+      bottom: 115px;
     }
   
 
@@ -101,7 +104,7 @@
     }
 
     .box3 {
-      width: 100%;
+      width: 400px;
       border-radius: 15px;
       padding: 50px;
       align-items: center;
@@ -140,7 +143,7 @@
       cursor: pointer;
       position: relative;
       top: 15px;
-      right: 50px; 
+      right: 3px; 
     }
 
     .button3:hover{
